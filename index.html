@@ -1,0 +1,392 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Kleiderherz – Kleiderspenden registrieren</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&family=Merriweather:wght@700&display=swap" rel="stylesheet" />
+</head>
+<body>
+
+  <!-- ===== TOP BAR ===== -->
+  <div class="top-bar">
+    Kleider spenden und Menschen in Krisengebieten helfen –
+    <a href="#registrierung">Jetzt Spende registrieren →</a>
+  </div>
+
+  <!-- ===== HEADER ===== -->
+  <header class="site-header">
+    <div class="header-inner">
+      <a href="#" class="logo" aria-label="Kleiderherz – zur Startseite">
+        <span class="logo-icon" aria-hidden="true">🧥</span>
+        <div class="logo-text-wrap">
+          <span class="logo-name">Kleiderherz</span>
+          <span class="logo-claim">Hilfsorganisation | Kleidung spenden und helfen</span>
+        </div>
+      </a>
+      <nav class="main-nav" id="main-nav" aria-label="Globale Navigation">
+        <ul>
+          <li><a href="#" class="nav-link">Über uns</a></li>
+          <li><a href="#kleiderspenden" class="nav-link active">Kleiderspenden</a></li>
+          <li><a href="#registrierung" class="nav-link">Spende registrieren</a></li>
+          <li><a href="#faq" class="nav-link">FAQ</a></li>
+          <li><a href="#kontakt" class="nav-link">Kontakt</a></li>
+        </ul>
+      </nav>
+      <button class="burger" id="burger" aria-label="Menü öffnen" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <!-- ===== MAIN ===== -->
+  <main>
+
+    <!-- HERO -->
+    <section class="hero" id="kleiderspenden">
+      <div class="hero-image-wrap">
+        <!-- Titelbild -->
+        <img
+          src="images/Titelbild.png"
+          alt="Mitarbeitende nehmen Kleiderspenden entgegen"
+          class="hero-img"
+        />
+        <div class="hero-overlay" aria-hidden="true"></div>
+      </div>
+      <div class="hero-content-wrap container">
+        <div class="hero-text">
+          <h1>Kleider&shy;spenden in deiner Region</h1>
+          <p>Bringe gut erhaltene Kleidung zu uns oder lass sie abholen. Du entscheidest selbst, in welche Krisenregion deine Spende gesendet wird.</p>
+        </div>
+        <div class="hero-info-box">
+          <h2>Öffnungszeiten Spendenannahme</h2>
+          <p class="hours-line">Dienstag – Samstag</p>
+          <p class="hours-time">10 – 18 Uhr</p>
+          <div class="divider"></div>
+          <address class="hero-address">
+            <strong>Musterstraße 12</strong><br/>
+            12345 Musterstadt<br/>
+            <em>Barrierefrei zugänglich</em>
+          </address>
+          <a href="#registrierung" class="btn btn-primary btn-full">Spende jetzt registrieren</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- WAS WIR ANNEHMEN -->
+    <section class="accept-section" id="annehmen">
+      <div class="container">
+        <h2 class="section-title">Was nehmen wir an?</h2>
+        <div class="accept-grid">
+
+          <div class="accept-card urgent">
+            <img src="https://placehold.co/56x56/e8534a/ffffff?text=!" alt="" class="card-icon-img" aria-hidden="true"/>
+            <h3>Dringender Bedarf</h3>
+            <ul>
+              <li>Winterjacken &amp; Mäntel</li>
+              <li>Kinderschuhe alle Größen</li>
+              <li>Schlafsäcke &amp; Decken</li>
+              <li>Regenjacken</li>
+              <li>Babykleidung</li>
+            </ul>
+          </div>
+
+          <div class="accept-card yes">
+            <img src="https://placehold.co/56x56/4a8c5c/ffffff?text=O" alt="" class="card-icon-img" aria-hidden="true"/>
+            <h3>Gerne angenommen</h3>
+            <ul>
+              <li>Männer- &amp; Frauenkleidung</li>
+              <li>Kinderkleidung</li>
+              <li>Schuhe in gutem Zustand</li>
+              <li>Handtücher &amp; Bettwäsche</li>
+              <li>Hygieneartikel (Neuware)</li>
+            </ul>
+          </div>
+
+          <div class="accept-card no">
+            <img src="https://placehold.co/56x56/999999/ffffff?text=x" alt="" class="card-icon-img" aria-hidden="true"/>
+            <h3>Bitte nicht spenden</h3>
+            <ul>
+              <li>Verschmutzte Kleidung</li>
+              <li>Kaputte Kleidungsstücke</li>
+              <li>Business-Anzüge &amp; Kostüme</li>
+              <li>Spielzeug &amp; Bücher</li>
+              <li>Bettdecken &amp; Kissen</li>
+            </ul>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- WAS PASSIERT MIT MEINER SPENDE -->
+    <section class="process-section" id="prozess">
+      <div class="container">
+        <h2 class="section-title">Was passiert mit meiner gespendeten Kleidung?</h2>
+        <div class="process-grid">
+
+          <div class="process-card">
+            <!-- BILDERREIHE-->
+            <img src="images/Krisengebiete.png" alt="Direkte Hilfe in Krisengebieten" class="process-img"/>
+            <div class="process-body">
+              <h3>Direkte Hilfe in Krisenregionen</h3>
+              <p>Du wählst beim Registrieren selbst, in welche aktuelle Krisenregion deine Kleidung gesendet wird. Wir kümmern uns um Sortierung und Transport.</p>
+            </div>
+          </div>
+
+          <div class="process-card">
+            <img src="Images/Lokale Weitergabe.jpg" alt="Lokale Weitergabe" class="process-img"/>
+            <div class="process-body">
+              <h3>Lokale Weitergabe</h3>
+              <p>Ein Teil der gespendeten Kleidung unterstützt gemeinnützige Einrichtungen in unserer Region – Frauenhäuser, Obdachlosenunterkünfte und Beratungsstellen.</p>
+            </div>
+          </div>
+
+          <div class="process-card">
+            <img src="Images/Upcycling.jpg" alt="Upcycling" class="process-img"/>
+            <div class="process-body">
+              <h3>Upcycling &amp; Weiterverwertung</h3>
+              <p>Kleidung, die nicht weitergegeben werden kann, prüfen wir auf Upcycling-Möglichkeiten – so gehen wir verantwortungsvoll mit den gespendeten Ressourcen um.</p>
+            </div>
+          </div>
+
+          <div class="process-card">
+            <img src="Images/Sorgfältige Sortierung.png" alt="Sortierprozess" class="process-img"/>
+            <div class="process-body">
+              <h3>Sorgfältige Sortierung</h3>
+              <p>Jede Spende wird von unserem ehrenamtlichen Team geprüft und sortiert – damit genau das ankommt, was gebraucht wird.</p>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- REGISTRIERUNGSFORMULAR -->
+    <section class="form-section" id="registrierung">
+      <div class="container">
+        <h2 class="section-title">Spende registrieren</h2>
+        <p class="section-sub">Wähle, wie du deine Kleidung übergeben möchtest – und entscheide, wohin sie geht.</p>
+
+        <!-- Step Indicator -->
+        <div class="steps" id="step-indicator" aria-label="Schrittanzeige">
+          <div class="step active" id="step-dot-1"><span>1</span><small>Übergabeart</small></div>
+          <div class="step-line" id="step-line-1"></div>
+          <div class="step" id="step-dot-2"><span>2</span><small>Details</small></div>
+          <div class="step-line" id="step-line-2"></div>
+          <div class="step" id="step-dot-3"><span>3</span><small>Bestätigung</small></div>
+        </div>
+
+        <div class="form-card" id="form-card">
+
+          <!-- SEITE 1 -->
+          <div class="form-page active" id="page-1">
+            <h3>Wie möchtest du die Kleidung übergeben?</h3>
+            <div class="delivery-options">
+
+              <label class="delivery-option" id="label-vorort">
+                <input type="radio" name="delivery" value="vorort" id="radio-vorort" />
+                <div class="option-box">
+                  <!-- Grafik Kleidung übergeben-->
+                  <img src="Images/Haus.jpg" alt="" aria-hidden="true" class="option-img"/>
+                  <strong>Übergabe an der Geschäftsstelle</strong>
+                  <p>Bringe deine Kleider persönlich vorbei. Ein Tablet vor Ort ermöglicht die direkte Registrierung.</p>
+                  <span class="option-sub">Musterstraße 12, 12345 Musterstadt</span>
+                </div>
+              </label>
+
+              <label class="delivery-option" id="label-abholung">
+                <input type="radio" name="delivery" value="abholung" id="radio-abholung" />
+                <div class="option-box">
+                  <img src="Images/LKW.jpg" alt="" aria-hidden="true" class="option-img"/>
+                  <strong>Abholung durch Sammelfahrzeug</strong>
+                  <p>Wir kommen zu dir! Nur im PLZ-Bereich 12xxx möglich.</p>
+                  <span class="option-sub">Kostenlos &amp; bequem</span>
+                </div>
+              </label>
+
+            </div>
+            <div class="form-error hidden" id="error-delivery">Bitte wähle eine Übergabeart aus.</div>
+            <div class="form-actions right">
+              <button class="btn btn-primary" id="btn-next-1">Weiter →</button>
+            </div>
+          </div>
+
+          <!-- SEITE 2 -->
+          <div class="form-page" id="page-2">
+            <h3>Details zur Spende</h3>
+
+            <div id="address-block" class="hidden">
+              <div class="field-group">
+                <label for="street">Straße und Hausnummer <span class="required">*</span></label>
+                <input type="text" id="street" name="street" placeholder="z. B. Hauptstraße 7" autocomplete="street-address" maxlength="150" />
+                <div class="form-error hidden" id="error-street">Bitte gib eine Straße an.</div>
+              </div>
+              <div class="field-row">
+                <div class="field-group">
+                  <label for="plz">Postleitzahl <span class="required">*</span></label>
+                  <input type="text" id="plz" name="plz" placeholder="12345" maxlength="5" inputmode="numeric" />
+                  <div class="form-error hidden" id="error-plz"></div>
+                </div>
+                <div class="field-group">
+                  <label for="city">Ort <span class="required">*</span></label>
+                  <input type="text" id="city" name="city" placeholder="Musterstadt" maxlength="100" />
+                  <div class="form-error hidden" id="error-city">Bitte gib einen Ort an.</div>
+                </div>
+              </div>
+            </div>
+
+            <div class="field-group">
+              <label for="clothing-type">Art der Kleidung <span class="required">*</span></label>
+              <select id="clothing-type" name="clothing-type">
+                <option value="">– bitte wählen –</option>
+                <option value="winterkleidung">Winterkleidung (Jacken, Mäntel, Pullover)</option>
+                <option value="sommerkleidung">Sommerkleidung (T-Shirts, Shorts, Kleider)</option>
+                <option value="kinderkleidung">Kinderkleidung (alle Größen)</option>
+                <option value="schuhe">Schuhe</option>
+                <option value="bettwaesche">Bettwäsche &amp; Decken</option>
+                <option value="gemischt">Gemischt / Sonstiges</option>
+              </select>
+              <div class="form-error hidden" id="error-clothing">Bitte wähle eine Kleidungsart aus.</div>
+            </div>
+
+            <div class="field-group">
+              <label for="crisis-region">Krisengebiet <span class="required">*</span></label>
+              <select id="crisis-region" name="crisis-region">
+                <option value="">– bitte wählen –</option>
+                <option value="Ukraine">🇺🇦 Ukraine</option>
+                <option value="Syrien">🇸🇾 Syrien</option>
+                <option value="Sudan">🇸🇩 Sudan</option>
+                <option value="Afghanistan">🇦🇫 Afghanistan</option>
+                <option value="Haiti">🇭🇹 Haiti</option>
+                <option value="Jemen">🇾🇪 Jemen</option>
+              </select>
+              <div class="form-error hidden" id="error-crisis">Bitte wähle ein Krisengebiet aus.</div>
+            </div>
+
+            <div class="field-group">
+              <label for="donor-name">Dein Name <span class="optional">(optional)</span></label>
+              <input type="text" id="donor-name" name="donor-name" placeholder="z. B. Maria Muster" maxlength="100" autocomplete="name" />
+            </div>
+
+            <div class="form-actions">
+              <button class="btn btn-secondary" id="btn-back-2">← Zurück</button>
+              <button class="btn btn-primary" id="btn-next-2">Spende registrieren ✓</button>
+            </div>
+          </div>
+
+          <!-- SEITE 3 -->
+          <div class="form-page" id="page-3">
+            <div class="success-header">
+              <div class="success-check" aria-hidden="true">✓</div>
+              <h3>Vielen Dank für deine Spende!</h3>
+              <p>Deine Registrierung war erfolgreich. Hier ist deine Zusammenfassung:</p>
+            </div>
+            <div class="summary-box" id="summary-box"></div>
+            <div class="form-actions center">
+              <button class="btn btn-primary" id="btn-new">Neue Spende registrieren</button>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- FAQ -->
+    <section class="faq-section" id="faq">
+      <div class="container faq-layout">
+        <div class="faq-left">
+          <h2 class="section-title">Häufig gestellte Fragen</h2>
+          <p>Du hast noch Fragen zu deiner Kleiderspende? Hier findest du Antworten auf die häufigsten Fragen.</p>
+          <div class="faq-contact-box">
+            <!-- Profilfoto -->
+            <img src="Images/Profilbild.jpg" alt="Ansprechpartner/in" class="faq-avatar"/>
+            <div>
+              <span class="faq-role">Ansprechpartner/in</span>
+              <strong>Jane Musterfrau</strong>
+              <a href="mailto:info@kleiderspenden-ev.de">info@kleiderspenden-ev.de</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="faq-right">
+          <details class="faq-item">
+            <summary>Welche Kleidung kann ich spenden?</summary>
+            <div class="faq-answer"><p>Wir nehmen alltagstaugliche Kleidung für alle Altersgruppen an – Männer-, Frauen- und Kinderkleidung, Schuhe, Schlafsäcke, Decken und Hygieneartikel als Neuware. Eine aktuelle Bedarfsliste findest du weiter oben auf dieser Seite.</p></div>
+          </details>
+          <details class="faq-item">
+            <summary>In welchem Zustand muss die Kleidung sein?</summary>
+            <div class="faq-answer"><p>Alle Kleidungsstücke sollten gewaschen und in gut erhaltenem Zustand sein. Nur so können wir auf würdevolle Weise helfen und sicherstellen, dass die Empfänger wirklich etwas Nützliches erhalten.</p></div>
+          </details>
+          <details class="faq-item">
+            <summary>Holt ihr meine Kleidung auch ab?</summary>
+            <div class="faq-answer"><p>Ja! Unser Sammelfahrzeug holt Spenden im PLZ-Bereich 12xxx ab. Wähle beim Registrieren die Option „Abholung" und gib deine Adresse an. Wir prüfen automatisch, ob du in unserem Einzugsgebiet liegst.</p></div>
+          </details>
+          <details class="faq-item">
+            <summary>Kann ich selbst entscheiden, wohin meine Kleidung geht?</summary>
+            <div class="faq-answer"><p>Ja, das ist unser Kerngedanke! Beim Registrieren wählst du aus einer Liste aktueller Krisengebiete aus, in welche Region deine Spende gesendet werden soll. So bleibt die Entscheidung bei dir.</p></div>
+          </details>
+          <details class="faq-item">
+            <summary>Kann ich Kleidung außerhalb der Öffnungszeiten abgeben?</summary>
+            <div class="faq-answer"><p>Nein, bitte stelle keine Kleider vor unserer Tür ab. Aus hygienischen Gründen müssten diese leider entsorgt werden – das hilft niemandem und verursacht uns zusätzliche Arbeit.</p></div>
+          </details>
+          <details class="faq-item">
+            <summary>Warum gibt es manchmal einen Annahmestopp?</summary>
+            <div class="faq-answer"><p>Manchmal werden bestimmte Artikel in größerem Maße gespendet als sie benötigt werden. Dann müssen wir vorübergehend einen Stopp ausrufen, damit unsere Lagerkapazitäten für dringend benötigte Artikel frei bleiben.</p></div>
+          </details>
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA: MITMACHEN -->
+    <section class="cta-section" id="mitmachen">
+      <div class="container cta-inner">
+        <div class="cta-text">
+          <h2>Hilf uns helfen!</h2>
+          <p>Wenn du Kleidung spendest, kannst du unsere Organisation direkt kennenlernen. Wir suchen immer ehrenamtliche Helfer:innen – und freuen uns über jede Unterstützung!</p>
+          <a href="#kontakt" class="btn btn-white">Ehrenamtlich mitmachen</a>
+        </div>
+        <!-- Teamfoto -->
+        <img src="Images/Teamfoto.jpg" alt="Ehrenamtliche Helfer/innen" class="cta-img"/>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ===== FOOTER ===== -->
+  <footer class="site-footer" id="kontakt">
+    <div class="footer-top container">
+      <div class="footer-col">
+        <div class="footer-logo">🧥 Kleiderherz e.V.</div>
+        <p>Hilfsorganisation für Kleiderspenden – einfach helfen.</p>
+      </div>
+      <div class="footer-col">
+        <h4>Öffnungszeiten</h4>
+        <p>Spendenannahme<br/>Dienstag – Samstag<br/><strong>10 – 18 Uhr</strong></p>
+        <p><em>An Feiertagen geschlossen.</em></p>
+      </div>
+      <div class="footer-col">
+        <h4>Kontakt</h4>
+        <address>
+          Musterstraße 12<br/>
+          12345 Musterstadt<br/>
+          <a href="mailto:info@kleiderspenden-ev.de">info@kleiderspenden-ev.de</a><br/>
+          <a href="tel:+4930123456">+49 30 123 456</a>
+        </address>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <nav class="footer-legal" aria-label="Rechtliche Navigation">
+        <a href="#">Impressum</a>
+        <a href="#">Datenschutz</a>
+        <a href="#">Barrierefreiheit</a>
+        <a href="#">AGB</a>
+      </nav>
+      <p class="footer-copy">© 2025 Kleiderherz e.V. – Registergericht: Amtsgericht Musterstadt | VR 12345</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
