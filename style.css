@@ -891,3 +891,6 @@
     .footer-top { grid-template-columns: 1fr; gap: 1.5rem; padding: 2rem 1.5rem; }
   }
   
+  .cta-text a {
+    text-decoration: none;
+  }
