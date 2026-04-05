@@ -228,67 +228,116 @@
           </div>
 
           <!-- SEITE 2 -->
-          <div class="form-page" id="page-2">
-            <h3>Details zur Spende</h3>
+<div class="form-page" id="page-2">
+  <h3 class="mb-4">Details zur Spende</h3>
 
-            <div id="address-block" class="hidden">
-              <div class="field-group">
-                <label for="street">Straße und Hausnummer <span class="required">*</span></label>
-                <input type="text" id="street" name="street" placeholder="z. B. Hauptstraße 7" autocomplete="street-address" maxlength="150" />
-                <div class="form-error hidden" id="error-street">Bitte gib eine Straße an.</div>
-              </div>
-              <div class="field-row">
-                <div class="field-group">
-                  <label for="plz">Postleitzahl <span class="required">*</span></label>
-                  <input type="text" id="plz" name="plz" placeholder="12345" maxlength="5" inputmode="numeric" />
-                  <div class="form-error hidden" id="error-plz"></div>
-                </div>
-                <div class="field-group">
-                  <label for="city">Ort <span class="required">*</span></label>
-                  <input type="text" id="city" name="city" placeholder="Musterstadt" maxlength="100" />
-                  <div class="form-error hidden" id="error-city">Bitte gib einen Ort an.</div>
-                </div>
-              </div>
-            </div>
+  <div id="address-block" class="hidden">
+    <div class="field-group mb-3">
+      <label for="street" class="form-label">
+        Straße und Hausnummer <span class="required">*</span>
+      </label>
+      <input
+        type="text"
+        id="street"
+        name="street"
+        class="form-control"
+        placeholder="z. B. Hauptstraße 7"
+        autocomplete="street-address"
+        maxlength="150"
+      />
+      <div class="form-error hidden" id="error-street">Bitte gib eine Straße an.</div>
+    </div>
 
-            <div class="field-group">
-              <label for="clothing-type">Art der Kleidung <span class="required">*</span></label>
-              <select id="clothing-type" name="clothing-type">
-                <option value="">– bitte wählen –</option>
-                <option value="winterkleidung">Winterkleidung (Jacken, Mäntel, Pullover)</option>
-                <option value="sommerkleidung">Sommerkleidung (T-Shirts, Shorts, Kleider)</option>
-                <option value="kinderkleidung">Kinderkleidung (alle Größen)</option>
-                <option value="schuhe">Schuhe</option>
-                <option value="bettwaesche">Bettwäsche &amp; Decken</option>
-                <option value="gemischt">Gemischt / Sonstiges</option>
-              </select>
-              <div class="form-error hidden" id="error-clothing">Bitte wähle eine Kleidungsart aus.</div>
-            </div>
+    <div class="row g-3">
+      <div class="col-md-4">
+        <div class="field-group mb-3">
+          <label for="plz" class="form-label">
+            Postleitzahl <span class="required">*</span>
+          </label>
+          <input
+            type="text"
+            id="plz"
+            name="plz"
+            class="form-control"
+            placeholder="12345"
+            maxlength="5"
+            inputmode="numeric"
+          />
+          <div class="form-error hidden" id="error-plz"></div>
+        </div>
+      </div>
 
-            <div class="field-group">
-              <label for="crisis-region">Krisengebiet <span class="required">*</span></label>
-              <select id="crisis-region" name="crisis-region">
-                <option value="">– bitte wählen –</option>
-                <option value="Ukraine">🇺🇦 Ukraine</option>
-                <option value="Syrien">🇸🇾 Syrien</option>
-                <option value="Sudan">🇸🇩 Sudan</option>
-                <option value="Afghanistan">🇦🇫 Afghanistan</option>
-                <option value="Haiti">🇭🇹 Haiti</option>
-                <option value="Jemen">🇾🇪 Jemen</option>
-              </select>
-              <div class="form-error hidden" id="error-crisis">Bitte wähle ein Krisengebiet aus.</div>
-            </div>
+      <div class="col-md-8">
+        <div class="field-group mb-3">
+          <label for="city" class="form-label">
+            Ort <span class="required">*</span>
+          </label>
+          <input
+            type="text"
+            id="city"
+            name="city"
+            class="form-control"
+            placeholder="Musterstadt"
+            maxlength="100"
+          />
+          <div class="form-error hidden" id="error-city">Bitte gib einen Ort an.</div>
+        </div>
+      </div>
+    </div>
+  </div>
 
-            <div class="field-group">
-              <label for="donor-name">Dein Name <span class="optional">(optional)</span></label>
-              <input type="text" id="donor-name" name="donor-name" placeholder="z. B. Maria Muster" maxlength="100" autocomplete="name" />
-            </div>
+  <div class="field-group mb-3">
+    <label for="clothing-type" class="form-label">
+      Art der Kleidung <span class="required">*</span>
+    </label>
+    <select id="clothing-type" name="clothing-type" class="form-select">
+      <option value="">Bitte wählen</option>
+      <option value="winterkleidung">Winterkleidung (Jacken, Mäntel, Pullover)</option>
+      <option value="sommerkleidung">Sommerkleidung (T-Shirts, Shorts, Kleider)</option>
+      <option value="kinderkleidung">Kinderkleidung (alle Größen)</option>
+      <option value="schuhe">Schuhe</option>
+      <option value="bettwaesche">Bettwäsche & Decken</option>
+      <option value="gemischt">Gemischt / Sonstiges</option>
+    </select>
+    <div class="form-error hidden" id="error-clothing">Bitte wähle eine Kleidungsart aus.</div>
+  </div>
 
-            <div class="form-actions">
-              <button class="btn btn-secondary" id="btn-back-2">← Zurück</button>
-              <button class="btn btn-primary" id="btn-next-2">Spende registrieren ✓</button>
-            </div>
-          </div>
+  <div class="field-group mb-3">
+    <label for="crisis-region" class="form-label">
+      Krisengebiet <span class="required">*</span>
+    </label>
+    <select id="crisis-region" name="crisis-region" class="form-select">
+      <option value="">Bitte wählen</option>
+      <option value="Ukraine">Ukraine</option>
+      <option value="Syrien">Syrien</option>
+      <option value="Sudan">Sudan</option>
+      <option value="Afghanistan">Afghanistan</option>
+      <option value="Haiti">Haiti</option>
+      <option value="Jemen">Jemen</option>
+    </select>
+    <div class="form-error hidden" id="error-crisis">Bitte wähle ein Krisengebiet aus.</div>
+  </div>
+
+  <div class="field-group mb-3">
+    <label for="donor-name" class="form-label">
+      Dein Name <span class="optional">(optional)</span>
+    </label>
+    <input
+      type="text"
+      id="donor-name"
+      name="donor-name"
+      class="form-control"
+      placeholder="z. B. Maria Muster"
+      maxlength="100"
+      autocomplete="name"
+    />
+  </div>
+
+  <div class="form-actions d-flex flex-column flex-md-row justify-content-between gap-2 mt-4">
+    <button class="btn btn-secondary" id="btn-back-2" type="button">Zurück</button>
+    <button class="btn btn-primary" id="btn-next-2" type="button">Spende registrieren</button>
+  </div>
+</div>
 
           <!-- SEITE 3 -->
           <div class="form-page" id="page-3">
